@@ -26,12 +26,10 @@ function game() {
     } else if (num < hiddenNumber) {
       alert('Загаданное число больше');
       find();
-    } else  if (num === hiddenNumber) {
-      confirm('Вы угадали! Сыграем ещё?');
+    } else  if (confirm('Вы угадали! Сыграем ещё?')) {
       game();
     } else {
       alert('До свидания');
-      return; 
     }
 
 } else {
